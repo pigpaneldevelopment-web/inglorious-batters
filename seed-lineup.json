@@ -1,0 +1,62 @@
+{
+  "team": "Inglorious Batters",
+  "timezone": "America/Denver",
+  "rival": {
+    "name": "Rivals",
+    "logo": null,
+    "placeholder": true
+  },
+  "cubsTeamId": 112,
+  "lineup": [
+    {
+      "order": 1,
+      "name": "Sam",
+      "position": "SS"
+    },
+    {
+      "order": 2,
+      "name": "Tyler",
+      "position": "LC"
+    },
+    {
+      "order": 3,
+      "name": "Jeremy",
+      "position": "P"
+    },
+    {
+      "order": 4,
+      "name": "Ryan",
+      "position": "3B"
+    },
+    {
+      "order": 5,
+      "name": "Brock",
+      "position": "LF"
+    },
+    {
+      "order": 6,
+      "name": "Bird",
+      "position": "C"
+    },
+    {
+      "order": 7,
+      "name": "Yoni",
+      "position": "2B"
+    },
+    {
+      "order": 8,
+      "name": "Cooper",
+      "position": "RC"
+    },
+    {
+      "order": 9,
+      "name": "Brett",
+      "position": "1B"
+    },
+    {
+      "order": 10,
+      "name": "Woody",
+      "position": "RF"
+    }
+  ]
+}
