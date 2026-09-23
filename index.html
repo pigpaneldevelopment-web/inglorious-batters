@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#102820" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon-192.png" type="image/png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
     <title>Inglorious Batters · Game day</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -14,10 +18,13 @@
         <h1>INGLORIOUS <span>BATTERS</span></h1>
       </div>
       <div class="actions">
+        <button id="install">Install app</button>
+        <button id="fullscreen" aria-pressed="false">Full screen</button>
         <button id="edit">Edit game</button
         ><button id="print" class="primary">Print / PDF</button>
       </div>
     </header>
+    <p id="app-status" role="status" hidden></p>
     <section class="scorecard" aria-label="Chicago Cubs scoreboard">
       <div class="score-title">
         <b class="badge">CHC</b>
@@ -126,6 +133,25 @@
         </div>
       </form>
     </dialog>
+    <dialog id="install-help" aria-labelledby="install-title">
+      <h2 id="install-title">Install on your tablet</h2>
+      <p>
+        In Chrome on Android, open the browser menu, choose Add to Home screen,
+        then Install. If Edge only creates a shortcut, open this same address in
+        Chrome and install there.
+      </p>
+      <p>
+        Remove the old home-screen shortcut and launch the newly installed
+        Inglorious Batters app. Your saved lineup stays in the browser where you
+        edited it; Chrome and Edge do not share saved games.
+      </p>
+      <p>
+        For full screen right now, close this message and tap Full screen. Use
+        Android Back or the app’s Exit full screen button to leave it.
+      </p>
+      <form method="dialog"><button>Got it</button></form>
+    </dialog>
+    <script type="module" src="./src/pwa.js"></script>
     <script type="module" src="./src/app.js"></script>
   </body>
 </html>

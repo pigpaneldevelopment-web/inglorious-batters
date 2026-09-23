@@ -13,7 +13,7 @@ npm run build
 npm run dev
 ```
 
-Open http://localhost:4173. Serve `dist/` only, never the parent workspace. The build copies an explicit five-file allowlist (including two JavaScript modules). Paths are relative, so project-based GitHub Pages works without a base-path change.
+Open http://localhost:4173. Serve `dist/` only, never the parent workspace. The build copies an explicit public-file allowlist. Paths are relative, so project-based GitHub Pages works without a base-path change.
 
 For browser tests, leave the preview server running, then:
 
@@ -60,3 +60,13 @@ Repository: https://github.com/pigpaneldevelopment-web/inglorious-batters
 Pages address: https://pigpaneldevelopment-web.github.io/inglorious-batters/
 
 Deploy updates with `git push origin main`; check the Deploy dashboard workflow before opening the Pages address.
+
+## Install and full screen on Android
+
+Open the published address in Chrome, use the browser menu → Add to Home screen → Install (or the dashboard’s Install app button when offered). Remove an older shortcut and launch the newly installed app. The manifest requests fullscreen; unsupported browsers may fall back to standalone. If Edge creates only a browser shortcut, install through Chrome instead. Browser support and Android system controls vary. A regular browser tab requires a tap on Full screen; websites cannot force that mode on page load. Exit with the app button or Android Back.
+
+Chrome and Edge keep separate local drafts. Re-enter your lineup if you switch browsers. The service worker caches only the public app shell for offline use, never MLB feeds. Offline scores remain unavailable; the saved lineup still works. New releases activate after all app windows/tabs close; reopen while online to fetch updates. No orientation is locked.
+
+Original generated logo: `icons/batters-logo.png`; PWA icons: `icons/icon-192.png`, `icons/icon-512.png`, and `icons/maskable-512.png`. The maskable icon adds extra padding to protect the mark from Android cropping. The logo was created with the built-in image-generation tool; the prompt is recorded in `LOGO_PROMPT.md`.
+
+Run `node tests/pwa.mjs` with the local preview server running, or set `PWA_URL` to the published app URL (with trailing slash). This tests manifest installability, fullscreen entry/exit, refusal handling, offline reload, local draft persistence, and cache exclusions. Actual K10 installation still requires a device check.

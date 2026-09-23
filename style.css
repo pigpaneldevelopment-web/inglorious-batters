@@ -507,3 +507,38 @@ label {
     padding: 1px 5px;
   }
 }
+
+header .actions {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 8px;
+}
+#app-status {
+  margin: 0 0 12px;
+  padding: 10px;
+  background: #fffef5;
+  border-radius: 6px;
+}
+#install-help p {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+html:fullscreen {
+  overflow: auto;
+  background: #eeeede;
+}
+@media (max-width: 450px) {
+  header {
+    flex-wrap: wrap;
+  }
+  header .actions {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media print {
+  #app-status,
+  #install-help {
+    display: none !important;
+  }
+}

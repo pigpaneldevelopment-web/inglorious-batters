@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Inglorious Batters",
+  "short_name": "Batters",
+  "description": "Game-day softball lineup, field positions and Cubs scoreboard.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "background_color": "#eeeede",
+  "theme_color": "#102820",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
