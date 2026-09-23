@@ -50,10 +50,13 @@ The original header reference and rival logo were not provided. The editable CSS
 A GitHub Pages Actions workflow is included. Create an `inglorious-batters` repository in the intended account, push this directory's reviewed source on `main`, and choose **Settings → Pages → Source → GitHub Actions**. The workflow builds and uploads only `dist/`. See [GitHub's Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 ```sh
-git remote add origin https://github.com/YOUR-ACCOUNT/inglorious-batters.git
 git push -u origin main
 ```
 
 Check the workflow and published URL, then test MLB requests on the Android tablet at that URL. Never treat a successful build as proof of deployment.
 
-Publication was attempted but blocked: the local Git HTTPS credential returned HTTP 401 from GitHub. The connected GitHub app can access existing repositories, but no matching repository exists and its tools cannot create repositories or configure Pages. No repository or live deployment URL has been claimed.
+Repository: https://github.com/pigpaneldevelopment-web/inglorious-batters
+
+Pages address: https://pigpaneldevelopment-web.github.io/inglorious-batters/
+
+Deploy updates with `git push origin main`; check the Deploy dashboard workflow before opening the Pages address.
