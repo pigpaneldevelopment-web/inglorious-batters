@@ -39,7 +39,7 @@ The selected date is interpreted in the configured local time zone (America/Denv
 
 Counts come from an unfinished current play matching the current half-inning. Between plays the app shows unknown count rather than recycling the prior batter's count. Bases/outs/scores come from linescore. Final leaders are computed separately for each team from game box-score hits, RBI, HR, and pitcher strikeouts; ties are preserved and zero categories omitted. Data availability and public API stability are not guaranteed.
 
-Source: [MLB Cubs scores](https://www.mlb.com/cubs/scores), schedule API `statsapi.mlb.com/api/v1/schedule`, live feed API `statsapi.mlb.com/api/v1.1/game/{gamePk}/feed/live`. Both API routes returned HTTP 200 through real desktop Chromium cross-origin requests on September 23, 2026. The actual Android K10 and a deployed Pages origin remain unverified.
+Source: [MLB Cubs scores](https://www.mlb.com/cubs/scores), schedule API `statsapi.mlb.com/api/v1/schedule`, live feed API `statsapi.mlb.com/api/v1.1/game/{gamePk}/feed/live`. Both API routes returned HTTP 200 through real desktop Chromium cross-origin requests on September 23, 2026. The published GitHub Pages origin was also verified in desktop Chromium: schedule and feed returned HTTP 200, all ten lineup entries and fielders rendered, and private handoff URLs returned HTTP 404. The actual Android K10 remains unverified.
 
 ## Branding
 
